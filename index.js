@@ -142,7 +142,7 @@ const redirigir = () => {
     tarjetas.forEach(tarjeta => {
         tarjeta.addEventListener('click', () => {
             // Obtiene la URL de la tarjeta que se va a redirigir
-            const url = "/movie1.html";
+            const url = "./movie1.html";
             // Redirecciona a la URL
             window.location.href = url;
 
