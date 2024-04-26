@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: #0c0900;
+}
+
+/* Navbar - Structure */
+
+#barra-navegacion {
+    background-color: #9f3647;
+}
+
+#navbar-logo {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+}
+
+#barra-navegacion {
+    background-color: #fac81b;
+}
+
+#barra-navegacion  ul li { 
+    font-size: 1.2rem;
+    font-weight: bold;
+    list-style: none;
+    color: black;
+}
+
+#barra-navegacion a { 
+    text-decoration: none;
+    color: black;
+}
+
+#barra-navegacion button {
+    font-weight: bold;
+}
+
+/* Navbar - Effects */
+
+#navbar-logo:hover {
+    animation: agitarse 0.3s infinite ease-in-out;
+}
+
+.navbar-element:hover  {
+    cursor: pointer;
+    animation: aparecerCajasSombreadas 1s infinite ease-in;
+}
+
+
+@keyframes agitarse {
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes aparecerCajasSombreadas {
+    0% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow:  0 0 20px black;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+
+/* Movie Banner - Structure */
+
+#movie-banner {
+    background-image: url(./Media/fallout-tv-show.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Motivational Section - Structure */
+
+#motivational-section {
+
+    background-image: url(./Media/movie-blog-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    margin-top: 3em;
+
+}
+
+
+#titulo-principal-motivational-section {
+
+    font-size: 3.5em;
+    font-style: 900;
+    color: white;
+    text-align: center;
+    width: 45vw;
+
+}
+
+
+#banner-motivational-section {
+    font-size: 3.7rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    width: 30vw;
+}
+
+
+#yellow-hr-bar {
+    height: 2vh;
+    width: 80vw;
+    background-color: #fac81b;
+}
+
+#boton-administrar-peliculas {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+}
+
+/* Motivational Section - Effects */
+
+
+/* Footer - Structure */
+
+footer {
+    color: white;
+    z-index: 999;
+}
+
+.footer-icon {
+    color: #fac81b;
+}
+
+#footer-arrow {
+    color: white;
+    font-size: 1.5em;
+}
