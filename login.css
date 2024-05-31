@@ -164,6 +164,29 @@ button:hover{
     transform: scale(1.2);
 }
 
+/* Estilos de validación */
+
+.input-invalido {
+    display: none;
+}
+
+input:valid + .input-invalido {
+    display: none;
+}
+
+.validado:invalid + .input-invalido {
+    display: block;
+    color: red;
+    font-size: 0.9rem;
+    margin: -20px auto 0 auto;
+    text-align: center;
+}
+
+.validado:invalid {
+    background-color: pink;
+    border-color: darkred;
+}
+
 /* Motivational Section - Structure */
 
 #motivational-section {

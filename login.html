@@ -27,7 +27,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <!-- Navbar -->
@@ -47,6 +46,11 @@
                     <li class="navbar-element me-4 p-2"><a href="#trends-section">Tendencias</a></li>
                     <li class="navbar-element me-4 p-2"><a href="registro.html">Registrarse</a></li>
                     <li class="me-4"><button class="btn btn-dark" type="submit"><a href="./login.html" class="text-white">Iniciar Sesión</a></button></li>
+                    <li class="navbar-element me-4 p-2">
+                        <button class="btn btn-dark" type="submit">
+                            <a class="text-white" href="conexion-api.html">Conexión API</a>
+                        </button>
+                    </li>
                 </ul>
 
             </div>
@@ -59,16 +63,28 @@
     
     <main id="maini" class="mb-5">
         <section>
-            <form action="" method="post" class="mb-5">
+            <form action="" method="post" class="mb-5" novalidate>
                 <h2 id="Login">Iniciar sesión</h2>
                 <div>
                     <input type="email" 
                         placeholder="Email" 
                         id="email" 
+                        required
                         name="email">
+                    <div class="input-invalido">
+                        Escribe un correo válido.
+                    </div>
                 </div>
                 <div>
-                    <input type="password" placeholder="Contraseña" required id="contraseña" name="contraseña">
+                    <input type="password"
+                        placeholder="Contraseña"
+                        class="form-control"
+                        id="contraseña"
+                        required
+                        name="contraseña">
+                    <div class="input-invalido">
+                        La contraseña es obligatoria.
+                    </div>
                 </div>
                 <div class="mb-5">
                     <input class="boton" type="submit" value="Entrar">
@@ -164,13 +180,10 @@
             </div> 
         </div> 
     </footer> 
-
-
+    <script src="login.js"></script>
     <script>
         AOS.init();
     </script>
-
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
